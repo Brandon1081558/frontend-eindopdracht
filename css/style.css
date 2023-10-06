@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@500&family=Noto+Sans+TC&family=Roboto+Mono&display=swap');
+
+/*font-family: 'Dosis', sans-serif;
+font-family: 'Noto Sans TC', sans-serif;
+font-family: 'Roboto Mono', monospace;*/
+* {
+    box-sizing: border-box;
+    font-family: 'Dosis',
+        sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+
+
+
+nav {
+    background-color: #fad643;
+    padding: 10px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 25px;
+    border-bottom: 2px solid #252422;
+    align-items: center;
+
+}
+
+nav img {
+    width: 5vw;
+    border: solid #252422;
+    border-radius: 30px;
+    margin-right: auto;
+}
+
+nav a {
+    color: #76520e;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #fcbf49;
+    background-color: #403d39;
+    border-radius: 20px;
+    border: 10px solid #403d39;
+    transition: 0.1s;
+}
+
+.background-home {
+    background-image: url('images/luxurybackground.jpg');
+    /* Pad naar je afbeelding */
+    background-size: cover;
+    /* Hiermee wordt de afbeelding geschaald om de hele achtergrond te bedekken */
+    background-position: center;
+    /* Hiermee wordt de afbeelding in het midden van de sectie geplaatst */
+    background-repeat: no-repeat;
+}
+
+.background-home h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
