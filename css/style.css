@@ -15,12 +15,17 @@ body {
     margin: 0;
 }
 
-@media (width <=480px) {
+@media (max-width: 480px) {
     nav {
         flex-direction: column;
         align-items: center;
     }
 
+    nav img {
+        margin-left: auto !important;
+        margin-right: auto !important;
+        width: 4rem !important;
+    }
 
     header {
         display: flex;
@@ -153,9 +158,9 @@ nav {
 
 nav img {
     margin-left: 3%;
-    width: 3vw;
+    width: 3rem;
     border: solid #252422;
-    border-radius: 30px;
+    border-radius: 1rem;
     margin-right: auto;
 }
 
@@ -177,6 +182,7 @@ nav a:hover {
 
 .background-home {
     background-image: url('images/luxurybackground.jpg');
+    width: 100vw;
     position: relative;
     background-size: cover;
     background-position: center;
@@ -389,6 +395,14 @@ input {
     border: 2px solid #c8ceda;
     border-radius: 4px;
     padding: 10px;
+}
+
+input:valid {
+    border: 2px solid green;
+}
+
+input:invalid {
+    border: 2px solid red;
 }
 
 .name {
